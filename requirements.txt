@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+pytz
+swagger-ui-py==21.12.8
+pymongo
+dnspython
+requests
+python-dotenv==0.17.1
+pytest
+python-decouple==3.5

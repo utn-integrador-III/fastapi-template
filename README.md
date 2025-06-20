@@ -62,6 +62,7 @@ A well-organized FastAPI project folder structure improves maintainability and s
 
 Key Points:
 
+# How to run the project locally
 - main.py: App entrypoint.
 - api/: Routers/endpoints, versioned if needed.
 - models/ & schemas/: ORM and Pydantic models.
@@ -73,3 +74,21 @@ Key Points:
 - tests/: All tests.
 
 This structure is scalable and follows FastAPI best practices. For small projects, you can simplify it, but this layout is a solid foundation for growth.
+
+
+1. create virtual env: `python3 -m venv venv`
+2. create .env file
+3. run: pip3 install -r requirements.txt
+4. If you are using vs code, go to `run and debug` and create a launch.json file and add the following (for env file, copy your path and paste it): 
+   { "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Python: Current File",
+                "type": "debugpy",
+                "request": "launch",
+                "program": "./app.py",
+                "console": "integratedTerminal",
+                "envFile": ".env"
+            }
+        ]
+   }
